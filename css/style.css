@@ -336,6 +336,9 @@
     .testimonial-carousel::after {
         width: 300px;
     }
+    .col-lg-custom-5 {
+        flex: 0 0 20%;
+    }
 }
 
 .testimonial-carousel .owl-item .testimonial-text,
