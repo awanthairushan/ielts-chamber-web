@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IELTS Chamber</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="coming-soon-assets/css/bd-coming-soon.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Detect the browser language
+            const userLang = navigator.language || navigator.userLanguage;
+
+            // English content
+            const contentEn = {
+                pageTitle: "We're coming soon",
+                maintenance: "🚧 Website Under Maintenance",
+                updateMsg: "We’re currently making some exciting updates to our website! 🛠️",
+                why: "Why?",
+                reason1: "Routine maintenance and improvements.",
+                reason2: "Enhancing your browsing experience.",
+                downtime: "Estimated Downtime:",
+                downtimeDetail: "Approximately 30 minutes.",
+                thankYou: "Thank you for your patience! We’ll be back online soon. 🌟",
+                stayConnected: "Stay connected"
+            };
+
+            // Chinese content
+            const contentZh = {
+                pageTitle: "即將推出，尽情期待",
+                maintenance: "🚧 網站維護中，请稍后再试",
+                updateMsg: "我們正在對網站進行一些精彩绝伦的更新！🛠️",
+                why: "如何？",
+                reason1: "“进行例行維護和改進，请稍后",
+                reason2: "即将提升您的瀏覽體驗，请稍后",
+                downtime: "預計停機時間：",
+                downtimeDetail: "维护大約 30 分鐘。",
+                thankYou: "感謝您的耐心等待！ 我們將很快恢復上線。🌟",
+                stayConnected: "保持联络"
+            };
+
+            // Choose content based on detected language
+            let content =contentEn;
+
+            if( userLang.startsWith('zh')){
+                content = contentZh;
+            }
+
+            // Update the content on the page
+            document.querySelector('.page-title').textContent = content.pageTitle;
+            document.querySelector('.maintenance').textContent = content.maintenance;
+            document.querySelector('.update-msg').textContent = content.updateMsg;
+            document.querySelector('.why').textContent = content.why;
+            document.querySelector('.reason1').textContent = content.reason1;
+            document.querySelector('.reason2').textContent = content.reason2;
+            document.querySelector('.downtime').textContent = content.downtime;
+            document.querySelector('.downtime-detail').textContent = content.downtimeDetail;
+            document.querySelector('.thank-you').textContent = content.thankYou;
+            document.querySelector('.stay-connected').textContent = content.stayConnected;
+        });
+    </script>
+</head>
+
+<body class="min-vh-100 d-flex flex-column">
+<header>
+    <div class="container">
+        <nav class="navbar navbar-dark bg-transparent">
+            <a class="navbar-brand p-0" href="#">
+                <img src="coming-soon-assets/images/Logo.svg" height="60" alt="logo">
+                <img src="coming-soon-assets/images/brand.svg" height="60" alt="brand">
+            </a>
+            <span class="navbar-text ml-auto d-none d-sm-inline-block">IELTS Chamber</span>
+            <span class="navbar-text d-none d-sm-inline-block">https://ieltschamber.lk/</span>
+        </nav>
+    </div>
+</header>
+<main class="my-auto">
+    <div class="container">
+        <h1 class="page-title"></h1>
+        <h1 class="maintenance"></h1>
+        <p class="update-msg"></p>
+        <h2 class="why"></h2>
+        <ul>
+            <li class="reason1"></li>
+            <li class="reason2"></li>
+        </ul>
+        <h2 class="downtime"></h2>
+        <ul><li class="downtime-detail"></li></ul>
+        <h2 class="thank-you"></h2>
+        <p class="stay-connected"></p>
+        <nav class="footer-social-links">
+            <a href="https://www.facebook.com/share/14Vvp1KzsU/?mibextid=LQQJ4d" class="social-link"><i class="mdi mdi-facebook-box"></i></a>
+            <a href="https://wa.me/+94712306611" class="social-link"><i class="mdi mdi-whatsapp"></i></a>
+        </nav>
+    </div>
+</main>
+</body>
+
+</html>
