@@ -1,0 +1,19 @@
+{
+    "name": "IELTS Chamber | Study IELTS & PTE  with Experts in the Field",
+    "short_name": "IELTS Chamber",
+    "description": "Achieve your desired IELTS and PTE score with IELTS Chamber's Expert Guidance, Online Classes, Personalized Coaching and get access to band 7+ answers for Writing Tasks in Sri Lanka.",
+    "start_url": "/",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
